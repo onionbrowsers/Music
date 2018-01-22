@@ -109,4 +109,4 @@ function successFn(data) {
     control = new root.controlManager(data.length) //执行index函数，上一首下一首函数
     playList.randerPlayList(data)
 }
-getData("../mock/data.json") 
+getData("/mock/data.json") 
