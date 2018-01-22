@@ -1,7 +1,7 @@
 [
     {
-        "image": "/source/song_1.jpg",
-        "audio": "/source/song_1.mp3",
+        "image": "../source/song_1.jpg",
+        "audio": "../source/song_1.mp3",
         "song": "丑八怪",
         "album": "意外",
         "singer": "薛之谦",
@@ -9,8 +9,8 @@
         "isLike": true
     },
     {
-        "image": "/source/song_2.jpg",
-        "audio": "/source/song_2.mp3",
+        "image": "../source/song_2.jpg",
+        "audio": "../source/song_2.mp3",
         "song": "小半",
         "album": "小梦大半",
         "singer": "陈粒",
@@ -18,8 +18,8 @@
         "isLike": false
     },
     {
-        "image": "/source/song_3.jpg",
-        "audio": "/source/song_3.mp3",
+        "image": "../source/song_3.jpg",
+        "audio": "../source/song_3.mp3",
         "song": "Shape of You",
         "album": "÷",
         "singer": "ed sheeran",
