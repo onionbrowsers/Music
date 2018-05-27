@@ -23,7 +23,6 @@ function bindTouch() {
             percent = 0
         }
         proccess.upDate(percent)
-        proccess.start()
     }).on('touchend',function (e) {
         //离开进度条，获取当前百分比，用百分比算当前时间，将其在当前时间播放
         var x = e.changedTouches[0].clientX
@@ -31,10 +30,10 @@ function bindTouch() {
         if(percent >= 1 || percent <= 0 ) {
             percent = 0
         }
-        proccess.upDate(percent)
         var index = control.index 
         var curDuration = songList[index].duration
         var curTime = curDuration * percent
+        proccess.upDate(percent)
         audio.jumpToPlay(curTime) //播放函数
         $scope.find('.play-btn').addClass('playing')
     })
