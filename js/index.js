@@ -51,7 +51,6 @@ function bindClick() {
             proccess.stop()
             $(this).removeClass('playing')  //改变图片
         }else{
-            proccess.start()
             audio.jumpToPlay(curTime)
             $(this).addClass('playing')
         }
