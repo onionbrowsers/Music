@@ -30,12 +30,12 @@ function bindTouch() {
         if(percent >= 1 || percent <= 0 ) {
             percent = 0
         }
+        proccess.upDate(percent)
         var index = control.index 
         var curDuration = songList[index].duration
         var curTime = curDuration * percent
-        proccess.start(percent)
-        $scope.find('.play-btn').addClass('playing')
         audio.jumpToPlay(curTime) //播放函数
+        $scope.find('.play-btn').addClass('playing')
     })
 }
 function bindClick() {
