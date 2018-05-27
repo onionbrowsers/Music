@@ -51,8 +51,8 @@ function bindClick() {
             proccess.stop()
             $(this).removeClass('playing')  //改变图片
         }else{
-            audio.play()
             proccess.start()
+            audio.jumpToPlay(curTime)
             $(this).addClass('playing')
         }
         // 可以写成$(this).toggleClass('playing')  意思是有这个class名就消除，没有就添加

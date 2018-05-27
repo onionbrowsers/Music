@@ -31,7 +31,7 @@
         var currentTime = percent * curDuration
         var time = formateDate(currentTime)
         $scope.find('.cur-time').html(time)
-        randerPro(percent )
+        randerPro(percent)
     }
     // 获取进度条的百分比
     function start() {
