@@ -56,7 +56,6 @@
         var stopTime = new Date().getTime();
         lastPercent = lastPercent + (stopTime - startTime) / (curDuration * 1000)
         cancelAnimationFrame(frameId)
-        console.log(lastPercent)
     }
     // 将计算的时长放入html中
     function randerAllTime(duration) {
