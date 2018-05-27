@@ -33,7 +33,7 @@ function bindTouch() {
         var index = control.index 
         var curDuration = songList[index].duration
         var curTime = curDuration * percent
-        proccess.upDate(percent)
+        proccess.start(percent)
         $scope.find('.play-btn').addClass('playing')
         audio.jumpToPlay(curTime) //播放函数
     })
