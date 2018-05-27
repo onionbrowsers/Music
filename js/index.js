@@ -34,8 +34,8 @@ function bindTouch() {
         var curDuration = songList[index].duration
         var curTime = curDuration * percent
         proccess.upDate(percent)
-        audio.jumpToPlay(curTime) //播放函数
         $scope.find('.play-btn').addClass('playing')
+        audio.jumpToPlay(curTime) //播放函数
     })
 }
 function bindClick() {
